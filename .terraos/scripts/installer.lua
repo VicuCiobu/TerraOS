@@ -16,6 +16,7 @@ fs.makeDir("/.terraos/images")
 
 downloadFile("/.terraos/images/desktop.image", "https://raw.github.com/Laboratory-Scripts/TerraOS/master/.terraos/images/desktop.image")
 downloadFile("/.terraos/scripts/os.lua", "https://raw.github.com/Laboratory-Scripts/TerraOS/master/.terraos/scripts/os.lua")
+downloadFile("/.terraos/version.ver", "https://raw.github.com/Laboratory-Scripts/TerraOS/master/.terraos/version.ver")
 downloadFile("/startup.lua", "https://raw.github.com/Laboratory-Scripts/TerraOS/master/startup.lua")
 
 os.reboot()
