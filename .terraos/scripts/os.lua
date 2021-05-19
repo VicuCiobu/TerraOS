@@ -6,6 +6,7 @@ print("Loading ...")
 sleep(1.9)
 
 -- Variables
+version = "0.1"
 running = true
 
 -- Images
@@ -20,12 +21,6 @@ clear = function()
     term.setBackgroundColor(colors.black)
     term.clear()
     term.setCursorPos(1, 1)
-end
-
-writeVersion = function()
-    versionFile = fs.open("/.terraos/version.ver", "r")
-    write("TerraOS" + tostring(versionFile.readLine()))
-    versionFile.close()
 end
 
 drawTaskbar = function()
@@ -46,7 +41,7 @@ drawTaskbar = function()
     term.setCursorPos(6, 1)
     term.setBackgroundColor(colors.blue)
     term.setTextColor(colors.white)
-    writeVersion()
+    term.write("TerraOS " .. version)
 end
 
 drawMenu1 = function()
