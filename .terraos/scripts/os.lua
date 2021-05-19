@@ -177,8 +177,6 @@ run = function()
         term.setTextColor(colors.white)
         write("> ")
         update = read()
-    else
-        init()
     end
 
     if (update == "Yes" or update == "yes" or update == "y" or update == "Y") then
@@ -195,3 +193,6 @@ init = function()
     drawTaskbar()
     runTime()
 end
+
+-- Main
+init()
