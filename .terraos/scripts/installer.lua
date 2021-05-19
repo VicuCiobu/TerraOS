@@ -12,7 +12,6 @@ function downloadFile(path, url)
 	file:close()
 end
 
-fs.makeDir("/.terraos/scripts")
 fs.makeDir("/.terraos/images")
 
 downloadFile("/.terraos/images/desktop.image", "https://raw.github.com/Laboratory-Scripts/TerraOS/master/.terraos/images/desktop.image")
