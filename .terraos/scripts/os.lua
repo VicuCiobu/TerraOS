@@ -24,7 +24,7 @@ end
 
 writeVersion = function()
     versionFile = fs.open("/.terraos/version.ver", "r")
-    write("TerraOS" + tonumber(versionFile))
+    write("TerraOS" + tostring(versionFile))
     versionFile.close()
 end
 
@@ -46,7 +46,7 @@ drawTaskbar = function()
     term.setCursorPos(6, 1)
     term.setBackgroundColor(colors.blue)
     term.setTextColor(colors.white)
-    term.write("TerraOS " .. version)
+    writeVersion()
 end
 
 drawMenu1 = function()
