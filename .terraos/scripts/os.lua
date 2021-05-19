@@ -24,7 +24,7 @@ end
 
 writeVersion = function()
     versionFile = fs.open("/.terraos/version.ver", "r")
-    write("TerraOS" + tostring(versionFile))
+    write("TerraOS" + versionFile)
     versionFile.close()
 end
 
