@@ -1,5 +1,8 @@
 function downloadFile(path, url)
-	print("Downloading: " .. path)
+	term.clear()
+	term.setCursorPos(1, 1)
+	term.setTextColor(colors.orange)
+	print("Downloaded " .. path)
 	data = http.get(url).readAll()
 	file = assert(io.open(path, "w"))
 	file:write(data)
@@ -9,6 +12,7 @@ end
 fs.makeDir("/.terraos/scripts")
 fs.makeDir("/.terraos/images")
 
---downloadFile("/void/void", "https://raw.github.com/Vilsol/VoidOS/master/void/void")
+downloadFile("/.terraos/images", "https://raw.githubusercontent.com/Laboratory-Scripts/TerraOS/master/.terraos/images/desktop.image")
+downloadFile("/.terraos/scripts", "https://raw.githubusercontent.com/Laboratory-Scripts/TerraOS/master/.terraos/scripts/os.lua")
 
 os.reboot()
