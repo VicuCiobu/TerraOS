@@ -172,6 +172,12 @@ run = function()
         term.setTextColor(colors.white)
         write("> ")
         update = read()
+    else
+        term.setCursorPos(26, 1)
+        term.setTextColor(colors.white)
+        write("no updates! Nice!")
+        sleep(1.5)
+        init()
     end
 
     if (update == "Yes" or update == "yes" or update == "y" or update == "Y") then
@@ -190,4 +196,4 @@ init = function()
 end
 
 -- Main
-init()
+run()
