@@ -6,7 +6,7 @@ print("Loading ...")
 sleep(1.9)
 
 -- Variables
-version = "0.1"
+version = "0.0.1_alpha"
 running = true
 
 -- Images
