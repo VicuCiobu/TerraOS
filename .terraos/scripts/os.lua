@@ -142,7 +142,7 @@ end
 checkUpdate = function()
 	versionFile = fs.open("/.terraos/version.ver", "r")
 	currentVersion = tonumber(versionFile.readLine())
-	newVersion = tonumber(http.get("https://raw.github.com/Laboratory-Scripts/TerraOS/master/.terraos/version.ver").readAll())
+	newVersion = tonumber(http.get("https://raw.github.com/Laboratory-Scripts/TerraOS/master/.terraos/version").readAll())
 	versionFile.close()
 
 	if (newVersion ~= currentVersion) then
