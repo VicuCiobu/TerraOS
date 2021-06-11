@@ -19,4 +19,11 @@ downloadFile("/.terraos/scripts/os.lua", "https://raw.github.com/Laboratory-Scri
 downloadFile("/.terraos/version.ver", "https://raw.github.com/Laboratory-Scripts/TerraOS/master/.terraos/version.ver")
 downloadFile("/startup.lua", "https://raw.github.com/Laboratory-Scripts/TerraOS/master/startup.lua")
 
+term.clear()
+term.setCursorPos(1, 1)
+term.setTextColor(colors.orange)
+print("Installation done!")
+
+sleep(2)
+
 os.reboot()
