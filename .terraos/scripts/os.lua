@@ -173,10 +173,6 @@ run = function()
         write("> ")
         update = read()
     else
-        term.setCursorPos(26, 1)
-        term.setTextColor(colors.white)
-        write("no updates! Nice!")
-        sleep(1.5)
         init()
     end
 
