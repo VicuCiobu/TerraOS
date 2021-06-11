@@ -6,7 +6,7 @@ print("Preparing TerraOS for use ...\nPlease don't turn off your computer")
 sleep(1.9)
 
 -- Variables
-version = "0.0.2"
+version = "0.2"
 running = true
 
 -- Images
